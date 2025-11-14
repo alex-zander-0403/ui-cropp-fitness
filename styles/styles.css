@@ -4,10 +4,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* width: 1920px; */
-  /* height: 90px; */
   padding-inline: 32px;
   column-gap: 20px;
+
+  background-color: var(--color-dark-alternate);
 }
 
 .header-logo {
@@ -46,7 +46,7 @@
 .header-menu-link.is-current::after {
   content: "";
   width: 5px;
-  height: 5px;
+  aspect-ratio: 1;
   background-color: currentColor;
   border-radius: 50%;
 }
@@ -84,17 +84,43 @@
   justify-content: center;
   align-items: center;
   width: 40px;
-  height: 40px;
+  aspect-ratio: 1;
 
   color: var(--color-light);
   background-color: transparent;
   border: var(--border);
-  border-radius: var(--border-radius);
+  border-radius: 50%;
 }
 .header-burger-button:hover {
   color: var(--color-light-gray);
   border-color: var(--color-light-gray);
 }
+
+/* ===== MEDIA ===== */
+
+.content {
+}
+.visually-hidden {
+}
+.banner {
+}
+.banner-body {
+}
+.banner-info {
+}
+.banner-title {
+}
+.banner-pagination {
+}
+.banner-pagination-list {
+}
+.banner-pagination-item {
+}
+.banner-pagination-button {
+}
+.is-Current {
+}
+
 
 /* ===== MEDIA ===== */
 

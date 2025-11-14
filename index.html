@@ -48,8 +48,12 @@
       </nav>
 
       <div class="header-actions">
-        <button class="button header-book-button">Book now</button>
-        <button class="header-burger-button">
+        <button type="button" class="button header-book-button">
+          Book now
+        </button>
+
+        <button type="button" title="Open menu" class="header-burger-button">
+          <span class="visually-hidden">Open menu</span>
           <svg
             width="22"
             height="11"
@@ -67,5 +71,44 @@
         </button>
       </div>
     </header>
+
+    <main class="content">
+      <!-- скрытый h1 -->
+      <h1 class="visually-hidden">Kropp finness Club</h1>
+
+      <section class="banner">
+        <!-- скрытый h2 -->
+        <h2 class="visually-hidden">Upcoming events</h2>
+
+        <div class="banner-body">
+          <div class="banner-info">
+            New event <br />
+            coming up / <time datetime="06-07">june 7</time> -
+            <time datetime="06-13">13</time>
+          </div>
+
+          <h3 class="banner-title">Crossfit</h3>
+        </div>
+
+        <div class="banner-pagination">
+          <ul class="banner-pagination-list">
+            <li class="banner-pagination-item">
+              <button type="button" class="banner-pagination-button"></button>
+            </li>
+
+            <li class="banner-pagination-item">
+              <button type="button" class="banner-pagination-button"></button>
+            </li>
+
+            <li class="banner-pagination-item">
+              <button
+                type="button"
+                class="banner-pagination-button is-Current"
+              ></button>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
