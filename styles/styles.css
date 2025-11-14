@@ -95,7 +95,7 @@
   display: flex;
   flex-direction: column;
   justify-content: end;
-  /* align-items: center; */
+  align-items: center;
   min-height: calc(100vh - var(--header-height));
   padding: 36px 70px;
 
@@ -117,15 +117,15 @@
   margin-right: 30px;
   margin-left: 60px;
   content: "";
-  width: min(10.1vw, 194px);
+  width: clamp(60px, 10.1vw, 194px);
   aspect-ratio: 1;
   background: url("../icons/arrow-icon-1.svg") center/contain no-repeat;
 }
 
 .banner-title {
+  /* width: 100%; */
   font-size: min(18.75vw, 360vw);
   line-height: 1;
-  /* font-weight: 700; */
 }
 
 .banner-pagination-list {
@@ -210,5 +210,18 @@
 
   .button {
     padding-inline: 18px;
+  }
+
+  .banner {
+    row-gap: 20px;
+  }
+
+  .banner-info {
+    margin-bottom: 5px;
+  }
+
+  .banner-info::before {
+    margin-right: 20px;
+    margin-left: 30px;
   }
 }
