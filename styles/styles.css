@@ -1,4 +1,10 @@
-/*  */
+/* =============== UTILITY =============== */
+
+.title-medium {
+  font-size: clamp(20px, 2.08vw, 40px);
+  line-height: 1.3;
+  color: var(--color-light);
+}
 
 /* =============== HEADER =============== */
 
@@ -66,9 +72,37 @@
   line-height: 2;
   letter-spacing: 1.2px;
   text-transform: uppercase;
+  text-decoration: none;
   white-space: nowrap;
 }
 .button:hover {
+  background-color: var(--color-light-gray);
+}
+
+.button.transparent {
+  position: relative;
+  height: var(--input-height);
+  padding-left: 31px;
+  padding-right: 80px;
+
+  background-color: transparent;
+  border: var(--border);
+}
+
+.button.transparent::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  height: 100%;
+  aspect-ratio: 1;
+
+  border: var(--border);
+  border-radius: 50%;
+  background: url("../icons/arrow-icon-2.svg") center/70% no-repeat;
+}
+
+.button.transparent:hover {
+  color: var(--color-dark);
   background-color: var(--color-light-gray);
 }
 
@@ -167,7 +201,91 @@
   border-color: var(--color-current-red);
 }
 
+/* =============== MOTIVATION =============== */
+
+.motivation {
+}
+.visually-hidden {
+}
+.motivation-list {
+}
+.motivation-item {
+}
+.motivation-item:nth-child(even) {
+  background-color: var(--color-dark-alternate);
+}
+
+.motivation-item:nth-child(even) .motivation-card {
+  flex-direction: row-reverse;
+}
+
+.motivation-card {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  column-gap: clamp(20px, 10.42vw, 200px);
+}
+
+.motivation-card-body {
+  padding-left: 35px;
+}
+.motivation-card-title:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.backbrop-title {
+  position: relative;
+  z-index: 10;
+}
+
+.backbrop-title::before {
+  display: block;
+  position: absolute;
+  right: calc(100% + 8px);
+  content: "";
+  width: 26px;
+  aspect-ratio: 1;
+  background: url("../icons/plus.svg") center/contain no-repeat;
+}
+
+.backbrop-title::after {
+  content: attr(data-title);
+  position: absolute;
+  top: -0.5em;
+  left: -0.7em;
+  z-index: -1;
+
+  color: transparent;
+  font-family: var(--font-family-accent);
+  font-size: 2.8em;
+  -webkit-text-stroke: 1px var(--color-light-gray);
+  text-stroke: 1px var(--color-light-gray);
+}
+
+.motivation-card-description {
+  max-width: 400px;
+}
+.motivation-card-description:not(:last-child) {
+  margin-bottom: 37px;
+}
+
+.motivation-card-button {
+}
+.button {
+}
+.transparent {
+}
+.motivation-card-img {
+  margin-block: -60px;
+}
+
 /* =============== MEDIA =============== */
+
+@media (max-width: 1919px) {
+  .motivation-card-img {
+    margin-block: -20px;
+  }
+}
 
 @media (max-width: 1024px) {
   .header {
@@ -188,6 +306,16 @@
 
   .banner {
     padding-inline: 15px;
+  }
+
+  .motivation-card-img {
+    max-width: 30%;
+    height: auto;
+    margin-block: 0px;
+  }
+
+  .motivation-card {
+    padding-block: 50px;
   }
 }
 
@@ -223,5 +351,22 @@
   .banner-info::before {
     margin-right: 20px;
     margin-left: 30px;
+  }
+
+  .motivation-card,
+  .motivation-item:nth-child(even) .motivation-card {
+    flex-direction: column-reverse;
+  }
+
+  .motivation-card {
+    row-gap: 30px;
+  }
+
+  .motivation-card-img {
+    max-width: 60%;
+  }
+
+  .motivation-card-description:not(:last-child) {
+    margin-bottom: 20px;
   }
 }
