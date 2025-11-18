@@ -232,12 +232,12 @@
   margin-bottom: 14px;
 }
 
-.backbrop-title {
+.backdrop-title {
   position: relative;
   z-index: 10;
 }
 
-.backbrop-title::before {
+.backdrop-title::before {
   display: block;
   position: absolute;
   right: calc(100% + 8px);
@@ -247,7 +247,7 @@
   background: url("../icons/plus.svg") center/contain no-repeat;
 }
 
-.backbrop-title::after {
+.backdrop-title::after {
   content: attr(data-title);
   position: absolute;
   top: -0.5em;
@@ -326,6 +326,46 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
+
+/* ==============={ JOIN US }=============== */
+
+.join-us {
+}
+.join-us-video-wrapper {
+}
+.join-us-video {
+}
+.join-us-video-play-button {
+}
+.join-us-body {
+}
+.join-us-title {
+}
+.join-us-form {
+}
+.join-us-form-header {
+}
+.join-us-form-title {
+}
+.backdrop-title {
+}
+.join-us-form-subtitle {
+}
+.join-us-form-body {
+}
+.visually-hidden {
+}
+.join-us-form-input {
+}
+.input {
+}
+.join-us-form-button {
+}
+.button {
+}
+.transparent {
+}
+
 
 /* ==============={ MEDIA }=============== */
 
