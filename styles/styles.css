@@ -546,6 +546,7 @@
 }
 
 .family-image {
+  /* css slider */
   scroll-snap-align: start;
 }
 
@@ -607,6 +608,11 @@
   .location {
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  /* family 1024 */
+  .family-image {
+    height: 360px;
   }
 }
 
@@ -685,5 +691,17 @@
   }
   .location-description:not(:last-child) {
     padding-bottom: 17px;
+  }
+
+  /* family 767 */
+  .family-body {
+    column-gap: 12px;
+  }
+  .family-header {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+  .family-image {
+    height: 200px;
   }
 }
