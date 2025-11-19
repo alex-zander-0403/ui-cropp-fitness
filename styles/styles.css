@@ -83,7 +83,6 @@
   -webkit-text-stroke: 1px var(--color-dark-gray);
   text-stroke: 1px var(--color-dark-gray);
 }
-
 .backdrop-title.centered::after {
   top: -0.35em;
   left: 50%;
