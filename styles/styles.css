@@ -107,6 +107,16 @@
   border-radius: var(--border-radius);
   background: transparent;
 }
+/* Hide the spin buttons in WebKit browsers */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Hide spin buttons in Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
 .input::placeholder {
   color: var(--color-light-gray);
 }
@@ -118,6 +128,10 @@
   color: var(--color-dark);
   background-color: var(--color-light-gray);
 }
+/* .input::placeholder,
+select.input:invalid {
+  color: var(--color-light-gray);
+} */
 
 .container {
   max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
@@ -301,10 +315,9 @@
 
 .motivation-card-description {
   max-width: 400px;
-  margin-bottom: 37px;
 }
 .motivation-card-description:not(:last-child) {
-  /* margin-bottom: 37px; */
+  margin-bottom: 37px;
 }
 
 .motivation-card-img {
@@ -548,6 +561,59 @@
 .family-image {
   /* css slider */
   scroll-snap-align: start;
+}
+
+/* ==============={ CALCULATE }=============== */
+
+.calculate {
+  padding-block: 146px;
+
+  background-color: var(--color-dark-alternate);
+}
+
+.calculate-inner {
+  display: flex;
+  align-items: center;
+  column-gap: 36px;
+}
+
+.calculate-body {
+  min-width: 672px;
+  flex-grow: 1;
+}
+
+.calculate-title:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.calculate-description {
+  max-width: 385px;
+}
+.calculate-description:not(:last-child) {
+  margin-bottom: 30px;
+}
+.calculate-form-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px 30px;
+}
+.calculate-form-body:not(:last-child) {
+  margin-bottom: 26px;
+}
+
+.calculate-form {
+}
+
+.calculate-input.wide {
+  grid-column: -1/1;
+}
+
+.calculate-button {
+}
+
+.calculate-table-wrapper {
+}
+.calculate-table {
 }
 
 /* ==============={ MEDIA }=============== */

@@ -436,7 +436,7 @@
                   class="calculate-input input"
                 />
 
-                <label for="height" class="visually-hidden">Weight</label>
+                <label for="weight" class="visually-hidden">Weight</label>
                 <input
                   id="weight"
                   type="number"
@@ -453,7 +453,7 @@
                 />
 
                 <label for="gender" class="visually-hidden">Gender</label>
-                <select id="gender" class="calculate-input input">
+                <select id="gender" class="calculate-input input" required>
                   <option value="" disabled selected>Gender</option>
                   <option value="male">Male</option>
                   <option value="female">Female</option>
@@ -462,7 +462,11 @@
                 <label for="activity-factor" class="visually-hidden"
                   >Activity factor</label
                 >
-                <select id="activity-factor" class="calculate-input input wide">
+                <select
+                  id="activity-factor"
+                  class="calculate-input input wide"
+                  required
+                >
                   <option value="" disabled selected>Activity factor</option>
 
                   <option value="1">
