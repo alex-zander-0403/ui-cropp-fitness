@@ -406,6 +406,96 @@
           />
         </div>
       </section>
+
+      <section class="calculate">
+        <h2 class="visually-hidden">calculate</h2>
+
+        <div class="container calculate-inner">
+          <div class="calculate-body">
+            <h3
+              data-title="Bmi"
+              class="calculate-title title-medium backdrop-title"
+            >
+              Input your BMI
+            </h3>
+
+            <div class="calculate-description">
+              <p>
+                Duo graece ponderum ne, ei mel aliquando. Pro te tamquam
+                nonumes, nam no nemore epicurei
+              </p>
+            </div>
+
+            <form class="calculate-form">
+              <div class="calculate-form-body">
+                <label for="height" class="visually-hidden">Height</label>
+                <input
+                  id="height"
+                  type="number"
+                  placeholder="Height / cm"
+                  class="calculate-input input"
+                />
+
+                <label for="height" class="visually-hidden">Weight</label>
+                <input
+                  id="weight"
+                  type="number"
+                  placeholder="Weight / kg"
+                  class="calculate-input input"
+                />
+
+                <label for="age" class="visually-hidden">Age</label>
+                <input
+                  id="age"
+                  type="number"
+                  placeholder="Age"
+                  class="calculate-input input"
+                />
+
+                <label for="gender" class="visually-hidden">Gender</label>
+                <select id="gender" class="calculate-input input">
+                  <option value="" disabled selected>Gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+
+                <label for="activity-factor" class="visually-hidden"
+                  >Activity factor</label
+                >
+                <select id="activity-factor" class="calculate-input input wide">
+                  <option value="" disabled selected>Activity factor</option>
+
+                  <option value="1">
+                    🔵 1 - Sedentary lifestyle (office work, minimal activity)
+                  </option>
+
+                  <option value="2">
+                    🟢 2 - Light activity (1-3 workouts per week)
+                  </option>
+
+                  <option value="3">
+                    🟡 3 - Moderate activity (3-5 workouts per week)
+                  </option>
+
+                  <option value="4">
+                    🟠 4 - High activity (daily workouts)
+                  </option>
+
+                  <option value="5">
+                    🔴 5 - Extreme activity (professional)
+                  </option>
+                </select>
+              </div>
+
+              <button type="submit" class="calculate-button button transparent">
+                Calculate
+              </button>
+            </form>
+          </div>
+
+          <div class="calculate-table-wrapper"></div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
