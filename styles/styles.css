@@ -578,7 +578,7 @@ select.input:invalid {
 }
 
 .calculate-body {
-  min-width: 672px;
+  max-width: 672px;
   flex-grow: 1;
 }
 
@@ -601,14 +601,8 @@ select.input:invalid {
   margin-bottom: 26px;
 }
 
-.calculate-form {
-}
-
 .calculate-input.wide {
   grid-column: -1/1;
-}
-
-.calculate-button {
 }
 
 .calculate-table-wrapper {
@@ -747,6 +741,26 @@ select.input:invalid {
   .family-image {
     height: 360px;
   }
+
+  /* calculate 1024*/
+  .calculate {
+    padding-block: 100px;
+  }
+  .calculate-inner {
+    column-gap: 20px;
+  }
+  .calculate-form-body {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .calculate-button {
+    width: 100%;
+  }
+  .calculate-table :is(td, th) {
+    padding-block: 10px;
+  }
+  .calculate-table tfoot td {
+    padding-top: 10px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -836,5 +850,17 @@ select.input:invalid {
   }
   .family-image {
     height: 200px;
+  }
+
+  /* calculate 767*/
+  .calculate {
+    padding-block: 60px;
+  }
+  .calculate-inner {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .calculate-table-wrapper::before {
+    display: none;
   }
 }
