@@ -620,7 +620,7 @@ select.input:invalid {
   top: 50%;
   left: 50%;
   translate: -50% -50%;
-  width: 75%;
+  width: 75%; /* 100% */
   aspect-ratio: 1;
 
   border-radius: 50%;
